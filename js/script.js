@@ -25,7 +25,6 @@ icon.addEventListener('click', () => {
 const numberOfContributors = [1, 2, 3, 4, 5, 6, 7, 8];
 const contributor = document.querySelector('.contributor-card');
 numberOfContributors?.map((contributors) => {
-  console.log(contributors);
   contributor.innerHTML += ` <div class="contributor">
   <div class="avatar-container">
     <img src="assets/avatar.svg" alt="contributor-avater" />
