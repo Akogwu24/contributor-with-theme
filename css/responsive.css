@@ -1,0 +1,68 @@
+@media only screen and (max-width: 760px) {
+  .wrapper {
+    max-width: 95vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .stat {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contributions-count {
+    justify-content: start;
+  }
+  .buttons button {
+    padding: 5px 10px;
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttons button:first-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .stat {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .header-content-container {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  header .header-content-container p,
+  header .header-content-container h1 {
+    font-size: 16px;
+  }
+  .logo-row img {
+    width: 30px;
+    margin-right: 5px;
+  }
+  .buttons {
+    grid-row-start: 3;
+  }
+  .buttons button {
+    margin-left: 0;
+  }
+  .github-globe {
+    display: flex;
+    justify-content: space-around;
+    grid-template-rows: auto auto auto;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  .avatar-container img {
+    width: 80px;
+  }
+} ;
